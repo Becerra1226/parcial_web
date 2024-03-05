@@ -2,13 +2,14 @@ html{
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
 	padding: 0;
+	background-color: #f4f2ee;
 }
 
 
 header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
 	overflow:hidden; /* Eliminamos errores de float */
-	background:hsl(0, 0%, 87%);
+	background: #ffff;
 	margin-bottom:20px;
 }
 
@@ -18,7 +19,8 @@ header nav{
 }
 
 .menu_container {
-	width:90%; /* Establecemos que el ancho sera del 90% */
+	
+	width:100%; /* Establecemos que el ancho sera del 90% */
 	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
 	margin:auto; /* Centramos los elementos */
 	overflow:hidden; /* Eliminamos errores de float */
@@ -26,7 +28,7 @@ header nav{
 
 header nav ul li{
     display:inline-block;
-	color:#fff;
+	color:#2c2c2c;
 	text-decoration:none;
 	padding:10px 20px;
 	line-height:normal;
@@ -41,4 +43,57 @@ header .logo{
     font-size:50px;
 	line-height:200px;
 	float:left;
+}
+
+
+
+.identidad{
+
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	float: left;
+	overflow: hidden;
+	border-radius: 8%;
+	margin-bottom: 4px;
+
+
+}
+
+.info_personal{
+	border-bottom-style: solid;
+	border-width: thin;
+	border-color: #2c2c2c;
+	display: inline-block;
+	
+}
+
+.contactos{
+	border-bottom-style: solid;
+	border-width: thin;
+	border-color: #2c2c2c;
+
+}
+
+.comunidad{
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	overflow: hidden;
+	border-radius: 8%;
+	float: left;
+	flex-direction: column;
+
+}
+
+.identidad > span {
+	border-bottom-style: solid;
+	border-width: thin;
+	border-color: #2c2c2c;
+}
+
+.comunidad > span {
+	border-top-style: solid;
+	border-width: thin;
+	border-color: #2c2c2c;
 }
